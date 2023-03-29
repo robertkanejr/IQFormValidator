@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Form Validation Interview Question</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<form id="userForm" method="get" novalidate>
+			<fieldset>
+				<legend>Please provide your name, email address, and country</legend>
+				<div class="field">
+					<label for="uname">Name</label>
+					<input id="uname" name="name" type="text" />
+					<strong class="errorMsg"></strong>
+				</div>
+				<div class="field">
+					<label for="uemail">Email</label>
+					<input id="uemail" name="email" type="email" />
+					<strong class="errorMsg"></strong>
+				</div>
+				<div class="field">
+					<label for="ucountry">Country</label>
+					<select id="ucountry" name="country">
+						<option value="Select">Select</option>
+						<option value="AU">Australia</option>
+						<option value="UK">United Kingdom</option>
+						<option value="US">United States</option>
+					</select>
+					<strong class="errorMsg"></strong>
+				</div>
+				<div class="field">
+					<input class="submit" type="submit" value="Submit" />
+				</div>
+			</fieldset>
+		</form>
+		<script src="script.js"></script>
+	</body>
+</html>

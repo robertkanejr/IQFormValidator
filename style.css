@@ -1,0 +1,29 @@
+#userForm {
+	width: 500px;
+}
+
+.field {
+	margin: 20px 5px;
+}
+
+.field label {
+	margin-right: 5px;
+}
+
+.errorMsg {
+	color: red;
+	display: none;
+	margin: 5px 0;
+}
+
+.errorMsg.shown {
+	display: block;
+}
+
+.invalid {
+	outline: 3px solid red;
+}
+
+#ucountry {
+	max-width: 133px;
+}
